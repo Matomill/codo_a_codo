@@ -1,0 +1,130 @@
+.item1 { grid-area: header;
+    background-color: #B8897F;
+    font-size: 3em;
+    background-image: url(logo3.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;   
+
+}
+.item2 { grid-area: menu;
+    background-color: aliceblue;
+    height: 200px; }
+.item3 { grid-area: main;
+    background-color: aliceblue;
+    background-image: url(tapiz_main.JPG);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.item4 { grid-area: footer;
+    background-color: #B8897F; }
+
+.tapiz2 { grid-area: tapiz2;
+  background-image: url(pie_cama1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  
+}    
+
+.article { grid-area: article;
+  background-image: url(pie_cama2.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+    
+}
+ 
+.themes li {
+  text-align: start;
+  color: #B8897F;
+  font-size: 28px;
+  padding: 5px;
+} 
+
+.item2 h1 {
+  color: #B8897F;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'tapiz2 tapiz2 tapiz2 article article article'
+    'footer footer footer footer footer footer';
+  grid-template-rows: 160px 780px 780px 140px;  
+  gap: 5px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+.menu li {
+    padding: 15px;
+    margin: 1.5px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    background-color: #E0BCB5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a:link {
+    color: #ffffff;
+}
+  
+.fa-brands {
+  color: black;
+  border-radius: 12px;
+  padding: 0.1em;
+}
+
+.history h1 {
+  color: #B8897F;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  animation-name: history;
+  animation-duration: 4s;
+}
+
+.history p {
+  color: #824d42 ;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.workshop {
+  margin: 20px 0;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.workshop iframe {
+  padding: 220px;
+}
+
+@keyframes history {
+  from {text-align: end;}
+  to {text-align: start}
+}
+
